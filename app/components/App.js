@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Router } from 'react-router';
 
 export default class App extends Component {
 
@@ -10,7 +11,7 @@ export default class App extends Component {
           <title>{title}</title>
         </head>
         <body>
-          hello world
+          {this.props.children}
         </body>
       </html>
     );
