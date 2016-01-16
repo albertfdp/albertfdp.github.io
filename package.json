@@ -1,0 +1,27 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "nandez.cat",
+  "main": "index.js",
+  "scripts": {
+    "prod": "NODE_ENV=production webpack -p --progress --config ./config/webpack.config.js",
+    "dev": "NODE_ENV=development webpack-dev-server --progress --colors --config ./config/webpack.config.js",
+    "start": "npm run dev"
+  },
+  "author": "Albert Fernandez <albert@nandez.cat>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.4.0",
+    "babel-loader": "6.2.1",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-stage-2": "6.3.13",
+    "history": "1.17.0",
+    "react": "0.14.6",
+    "react-dom": "0.14.6",
+    "react-router": "1.0.3",
+    "static-site-generator-webpack-plugin": "2.0.1",
+    "webpack": "1.12.11",
+    "webpack-dev-server": "1.14.1"
+  }
+}
