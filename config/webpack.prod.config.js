@@ -4,14 +4,7 @@ import StaticSiteGeneratorPlugin from 'static-site-generator-webpack-plugin';
 import data from '../data';
 
 const config = {
-  ...baseConfig,
-  plugins: [
-    new StaticSiteGeneratorPlugin(
-      path.join(baseConfig.output.path, 'app.js'),
-      data.routes,
-      data
-    )
-  ]
+  ...baseConfig
 };
 
 export default config;

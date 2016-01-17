@@ -1,10 +1,13 @@
 import React, { Component, PropTypes } from 'react';
+import Navbar from './Navbar';
 
 export default class Index extends Component {
 
   render() {
     return (
-      <main>Index</main>
+      <div className="index">
+        <Navbar />
+      </div>
     );
   }
 
