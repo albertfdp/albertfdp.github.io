@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Navbar/Navbar';
 
 if (__CLIENT__) {
-  require('../style/Index.scss');
+  require('./Index.scss');
 }
 
 export default class Index extends Component {

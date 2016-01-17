@@ -5,7 +5,7 @@ import { Router, RoutingContext, match } from 'react-router';
 import { createHistory, createMemoryHistory } from 'history';
 import Helmet from 'react-helmet';
 
-import App from './components/App';
+import App from './components/App/App';
 import routes from './routes';
 
 if (typeof document !== 'undefined') {

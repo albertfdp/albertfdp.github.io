@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet';
 
 if (__CLIENT__) {
-  require('../style/App.scss');
+  require('./App.scss');
 }
 
 export default class App extends Component {
