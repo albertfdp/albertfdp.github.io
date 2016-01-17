@@ -27,16 +27,13 @@ const config = {
         query: {
           presets: ['es2015', 'stage-2', 'react']
         }
-      },
-      {
-        loaders: ['style', 'css', 'sass'],
-        test: /\.scss$/
       }
     ]
   },
 
   plugins: [
     new webpack.DefinePlugin({
+      __CLIENT__: true,
       __DEV__: process.env.NODE_ENV === 'development',
       __PROD__: process.env.NODE_ENV === 'production'
     })

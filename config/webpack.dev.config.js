@@ -12,6 +12,15 @@ const config = {
 
   devtool: 'eval-sourcemap',
 
+  module: {
+    loaders: baseConfig.module.loaders.concat([
+      {
+        loaders: ['style', 'css', 'sass'],
+        test: /\.scss$/
+      }
+    ])
+  },
+
   plugins: baseConfig.plugins.concat([
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()

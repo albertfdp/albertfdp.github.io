@@ -1,6 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet';
 
+if (__CLIENT__) {
+  require('../style/App.scss');
+}
+
 export default class App extends Component {
 
   render() {
@@ -11,6 +15,9 @@ export default class App extends Component {
           title={title}
           meta={[
             {charset: 'utf-8'}
+          ]}
+          link={[
+            { rel: 'stylesheet', href: 'style.css' }
           ]} />
         {this.props.children}
       </div>

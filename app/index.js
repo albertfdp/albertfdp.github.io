@@ -11,7 +11,9 @@ import routes from './routes';
 if (typeof document !== 'undefined') {
   let history = createHistory();
   ReactDOM.render(
-    <Router history={history} routes={routes} />,
+    <App title={'Albert'}>
+      <Router history={history} routes={routes} />
+    </App>,
     document.getElementById('container')
   );
 }
@@ -39,6 +41,7 @@ export default function render(locals, callback) {
         </head>
         <body>
           <div id="container">${renderedBody}</div>
+          <script type="text/javascript" src="app.js" charset="utf-8"></script>
         </body>
       </html>
     `;
