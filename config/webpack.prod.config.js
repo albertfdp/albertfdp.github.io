@@ -12,7 +12,7 @@ const config = {
   module: {
     loaders: baseConfig.module.loaders.concat([
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         loader: ExtractTextPlugin.extract(
           'style-loader',
           'css-loader!sass-loader'

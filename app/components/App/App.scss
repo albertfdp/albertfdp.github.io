@@ -1,4 +1,13 @@
+@import '../../style/base';
+
 html, body {
+  font-family: $font-family-serif;
   height: 100%;
-  background-color: blue;
+  margin: 0;
+}
+
+body {
+  @include tablet {
+    padding: 0 10px;
+  }
 }

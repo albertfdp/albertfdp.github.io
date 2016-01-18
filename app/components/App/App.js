@@ -17,7 +17,7 @@ export default class App extends Component {
             {charset: 'utf-8'}
           ]}
           link={[
-            { rel: 'stylesheet', href: 'style.css' }
+            { rel: 'stylesheet', type: 'text/css', href: 'style.css' }
           ]} />
         {this.props.children}
       </div>

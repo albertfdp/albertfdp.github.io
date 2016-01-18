@@ -16,7 +16,7 @@ const config = {
     loaders: baseConfig.module.loaders.concat([
       {
         loaders: ['style', 'css', 'sass'],
-        test: /\.scss$/
+        test: /\.(css|scss)$/
       }
     ])
   },

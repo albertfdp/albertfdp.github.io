@@ -4,12 +4,14 @@ import { renderToString } from 'react-dom/server';
 import { Router, RoutingContext, match } from 'react-router';
 import { createHistory, createMemoryHistory } from 'history';
 import Helmet from 'react-helmet';
+import ga from 'react-ga';
 
 import App from './components/App/App';
 import routes from './routes';
 
 if (typeof document !== 'undefined') {
   let history = createHistory();
+  ga.initialize('UA-57975486-1');
   ReactDOM.render(
     <App title={'Albert'}>
       <Router history={history} routes={routes} />

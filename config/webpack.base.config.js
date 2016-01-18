@@ -18,6 +18,10 @@ const config = {
     libraryTarget: 'umd'
   },
 
+  resolve: {
+    modulesDirectories: ['node_modules']
+  },
+
   module: {
     loaders: [
       {
@@ -27,6 +31,10 @@ const config = {
         query: {
           presets: ['es2015', 'stage-2', 'react']
         }
+      },
+      {
+        loader: 'url-loader?limit=100000',
+        test: /\.(otf|eot|svg|ttf|woff|woff2)(\?[a-z0-9=\.]+)?$/
       }
     ]
   },
