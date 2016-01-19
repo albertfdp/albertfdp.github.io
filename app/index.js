@@ -43,7 +43,7 @@ export default function render(locals, callback) {
         </head>
         <body>
           <div id="container">${renderedBody}</div>
-          <script type="text/javascript" src="app.js" charset="utf-8"></script>
+          <script type="text/javascript" src="dist/app.js" charset="utf-8"></script>
         </body>
       </html>
     `;
