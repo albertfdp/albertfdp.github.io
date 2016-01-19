@@ -14,7 +14,8 @@ export default class App extends Component {
         <Helmet
           title={title}
           meta={[
-            {charset: 'utf-8'}
+            { charset: 'utf-8' },
+            { name: 'google-site-verification', content: 'VnqbeTWcp7gWpS1AX51WIPG2PZY_lUjl4OP6Ss0dk_g' }
           ]}
           link={[
             { rel: 'stylesheet', type: 'text/css', href: 'dist/style.css' }
