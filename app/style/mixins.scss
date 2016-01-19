@@ -4,25 +4,25 @@
 }
 
 @mixin mobile {
-  @media screen and (max-width: #{$small}) {
+  @media (max-width: #{$small - 1px}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (max-width: #{$medium}) {
+  @media (min-width: #{$small}) and (max-width: #{medium - 1px}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (max-width: #{$large}) {
+  @media (min-width: #{$medium}) and (max-width: #{large - 1px}) {
     @content;
   }
 }
 
 @mixin large {
-  @media screen and (min-width: #{$xlarge}) {
+  @media (min-width: #{$xlarge}) {
     @content;
   }
 }
