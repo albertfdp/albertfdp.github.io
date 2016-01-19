@@ -8,9 +8,12 @@ if (__CLIENT__) {
 
 export default class Index extends Component {
 
+  componentWillMount() {
+    ga.pageview(this.props.location.pathname);
+  }
+
   render() {
     const { icons } = this.props;
-
     return (
       <div className="index">
         <section className="index__container">
