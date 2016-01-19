@@ -6,6 +6,7 @@
   "scripts": {
     "prod": "NODE_ENV=production webpack -p --progress --config ./config/webpack.config.js",
     "postprod": "mv dist/index.html .",
+    "deploy": "npm run prod && git add . && git commit -m \"deploy\" && git push origin master",
     "dev": "NODE_ENV=development babel-node devServer.js",
     "start": "npm run dev"
   },
