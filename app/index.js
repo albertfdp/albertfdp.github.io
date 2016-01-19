@@ -13,7 +13,7 @@ if (typeof document !== 'undefined') {
   let history = createHistory();
   ga.initialize('UA-57975486-1');
   ReactDOM.render(
-    <App title={'Albert'}>
+    <App title={'Albert Fernández'}>
       <Router history={history} routes={routes} />
     </App>,
     document.getElementById('container')
