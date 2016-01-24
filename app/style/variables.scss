@@ -1,10 +1,5 @@
 $base-font-size: 16;
 
-@import url(https://fonts.googleapis.com/css?family=Ovo|Open+Sans);
-$font-family-sans: 'Open Sans', sans-serif;
-$font-family-serif: 'Ovo', serif;
-
-$small: 640px;
-$medium: 1024px;
-$large: 1200px;
-$xlarge: 1200px;
+$tablet: 40.0rem;
+$desktop: 80.0rem;
+$large: 120.0rem;

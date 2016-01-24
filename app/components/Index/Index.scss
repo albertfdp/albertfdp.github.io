@@ -5,24 +5,15 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
 
   &__title {
-    @include font-size(90);
     text-align: center;
-
-    @include desktop {
-      @include font-size(40);
-    }
   }
 
   &__subtitle {
-    @include font-size(42);
     text-align: center;
-
-    @include desktop {
-      @include font-size(18);
-    }
   }
 
   &__divider {
@@ -41,7 +32,7 @@
     @include font-size(36);
     padding: 0 20px;
     color: black;
-    
+
     &:active,
     &:focus,
     &:hover,
