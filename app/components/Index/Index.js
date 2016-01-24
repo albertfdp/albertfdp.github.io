@@ -20,9 +20,6 @@ export default class Index extends Component {
           {'Albert Fernández de la Peña'}
         </h1>
         <div className="index__divider"></div>
-        <p className="index__subtitle">
-          {'I build awesome web and mobile apps.'}
-        </p>
         <section className="index__icons">
           {icons.map(this.renderIcon.bind(this))}
         </section>
