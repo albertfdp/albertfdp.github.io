@@ -26,7 +26,7 @@ export default class Index extends Component {
         </h1>
         <div className="index__divider"></div>
         <section className="index__icons">
-          {icons.map(this.renderIcon}
+          {icons.map(this.renderIcon)}
         </section>
       </div>
     );
