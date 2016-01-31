@@ -8,6 +8,11 @@ if (__CLIENT__) {
 
 export default class Index extends Component {
 
+  constructor(props) {
+    super(props);
+    this.renderIcon = this.renderIcon.bind(this);
+  }
+
   componentWillMount() {
     ga.pageview(this.props.location.pathname);
   }
@@ -21,7 +26,7 @@ export default class Index extends Component {
         </h1>
         <div className="index__divider"></div>
         <section className="index__icons">
-          {icons.map(this.renderIcon.bind(this))}
+          {icons.map(this.renderIcon}
         </section>
       </div>
     );
