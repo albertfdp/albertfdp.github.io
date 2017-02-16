@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const postcssCssNext = require('postcss-cssnext')
 const postcssImport = require('postcss-import')
+const postcssAutoprefixer = require('autoprefixer')
 const postcssVariableMedia = require('postcss-variable-media')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
@@ -85,7 +86,8 @@ module.exports = {
               },
               consolidate: true
             }),
-            postcssCssNext()
+            postcssCssNext(),
+            postcssAutoprefixer()
           ]
         }
       }
