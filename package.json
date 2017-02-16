@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js",
+    "deploy": "yarn build && gh-pages -d public",
     "lint": "standard"
   },
   "repository": "https://github.com/albertfdp/nandez.cat",
@@ -24,6 +25,7 @@
     "csscomb": "3.1.7",
     "extract-text-webpack-plugin": "2.0.0-beta.4",
     "file-loader": "0.10.0",
+    "gh-pages": "0.12.0",
     "html-webpack-plugin": "2.28.0",
     "postcss-cssnext": "2.9.0",
     "postcss-import": "9.1.0",
