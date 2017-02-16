@@ -6,12 +6,14 @@
   font-weight: 300;
   font-style: normal;
 
+  background-color: var(--color-tuna);
+
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
 html,
 body {
-  font-family: "system";
+  font-family: "Open Sans", "system";
 
   height: 100%;
   margin: 0;
