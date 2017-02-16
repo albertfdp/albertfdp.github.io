@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 40px;
+  padding: 40px 10%;
 
   color: var(--color-iron);
   background-color: var(--color-tuna);
@@ -14,9 +14,20 @@
   justify-content: center;
 }
 
+@desktop {
+  .name {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: column;
+
   min-height: 280px;
 }
 
@@ -28,7 +39,7 @@
 }
 
 .name {
-  font-size: 3em;
+  font-size: 4rem;
 
   margin-bottom: 5px;
 
@@ -36,7 +47,7 @@
 }
 
 .title {
-  font-size: 2em;
+  font-size: 3rem;
 
   margin-top: 10px;
 
@@ -48,23 +59,45 @@
 .actions {
   display: flex;
   flex-direction: column;
-  align-self: center;
 
   min-height: 100px;
-  padding: 30px;
+  padding: 3rem;
+
+  align-self: center;
 }
 
 .text {
+  font-size: 2rem;
+
   margin-bottom: 10px;
+
+  text-align: center;
+}
+
+@desktop {
+  .actions {
+    padding: 30px;
+  }
+
+  .cta {
+    font-size: 1rem;
+
+    padding: 15px 30px;
+  }
+
+  .resume,
+  .text {
+    font-size: 1rem;
+  }
 }
 
 .cta {
-  font-size: 1em;
+  font-size: 2.5rem;
   font-weight: 600;
 
   display: inline-block;
 
-  padding: 15px 30px;
+  padding: 30px 60px;
 
   text-align: center;
   text-decoration: none;
@@ -106,6 +139,8 @@
 }
 
 .resume {
+  font-size: 2.2rem;
+
   margin-top: 20px;
 
   text-align: center;
@@ -116,15 +151,21 @@
 
 .resume:hover {
   cursor: pointer;
+
   color: var(--color-iron);
 }
 
 .icon svg {
-  width: 48px;
-  height: 48px;
-  padding: 5px 20px;
+  width: 4rem;
+  height: 4rem;
+  padding: .4em 1rem;
 
   fill: var(--color-iron);
+}
+
+@desktop {
+  width: 48px;
+  height: 48px;
 }
 
 .icon:hover svg,
