@@ -271,7 +271,7 @@ babel-core@~6.13.2:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-eslint@^7.1.1:
+babel-eslint@7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-7.1.1.tgz#8a6a884f085aa7060af69cfc77341c2f99370fb2"
   dependencies:
@@ -4435,19 +4435,13 @@ rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~1.0.4"
 
-react-dom@15.4.2, react-dom@^15.0.2:
+react-dom@15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.2.tgz#015363f05b0a1fd52ae9efdd3a0060d90695208f"
   dependencies:
     fbjs "^0.8.1"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
-
-react-html-document@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-html-document/-/react-html-document-3.1.0.tgz#36540e7cf85bba8f042b66c72676d69a896467cb"
-  dependencies:
-    react-dom "^15.0.2"
 
 react-svg-loader@1.1.1:
   version "1.1.1"

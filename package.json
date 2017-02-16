@@ -7,14 +7,15 @@
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js && mv dist/index.html .",
     "deploy": "yarn build && git add dist index.html && git commit -m 'Updates' && git push",
-    "lint": "standard"
+    "lint": "standard src/*",
+    "travis": "yarn standard"
   },
   "repository": "https://github.com/albertfdp/nandez.cat",
   "author": "Albert Fernández <albert@nandez.cat>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "6.23.1",
-    "babel-eslint": "^7.1.1",
+    "babel-eslint": "7.1.1",
     "babel-loader": "6.3.2",
     "babel-plugin-module-resolver": "2.5.0",
     "babel-polyfill": "6.23.0",
@@ -44,9 +45,7 @@
     "webpack": "2.2.1",
     "webpack-dev-server": "2.3.0"
   },
-  "dependencies": {
-    "react-html-document": "3.1.0"
-  },
+  "dependencies": {},
   "standard": {
     "parser": "babel-eslint",
     "global": [
