@@ -25,13 +25,13 @@ export default (locals, callback) => {
       <head>
         <meta charset="utf-8" />
         <title>Albert Fern&aacute;ndez</title>
-        ${stylesheets.map(style => (`<link href="${style}" rel="stylesheet" />`))}
+        ${stylesheets.map(style => (`<link href="/dist/${style}" rel="stylesheet" />`))}
       </head>
       <body>
         <div id="container">
           ${renderToStaticMarkup(<App />)}
         </div>
-        ${scripts.map(script => (`<script src="${script}"></script>`))}
+        ${scripts.map(script => (`<script src="/dist/${script}"></script>`))}
       </body>
     </html>
     `
