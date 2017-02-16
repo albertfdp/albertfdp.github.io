@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js && mv dist/index.html .",
-    "deploy": "git rm -r dist && yarn build && git add dist index.html && git commit -m 'Updates' && yarn publish",
+    "deploy": "yarn build && git add dist index.html && git commit -m 'Updates' && yarn publish",
     "publish": "git push",
     "lint": "standard"
   },
