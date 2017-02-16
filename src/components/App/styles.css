@@ -1,0 +1,133 @@
+@import "styles/variables.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+
+  color: var(--color-iron);
+  background-color: var(--color-tuna);
+
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 180px;
+}
+
+.name {
+  font-size: 3em;
+
+  margin-bottom: 5px;
+
+  text-align: left;
+}
+
+.title {
+  font-size: 2em;
+
+  margin-top: 10px;
+
+  text-align: left;
+
+  opacity: .7;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  min-height: 100px;
+  padding: 30px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.cta {
+  font-size: 1em;
+  font-weight: 600;
+
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+
+  color: var(--color-tuna);
+  border: 1px solid var(--color-cape-cod);
+  border-radius: 3px;
+  background-color: var(--color-sapling);
+}
+
+.cta:hover {
+  cursor: pointer;
+
+  color: var(--color-tuna);
+  background-color: color(var(--color-sapling) a(.9));
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 20px;
+
+  flex: 1;
+  justify-content: center;
+}
+
+@tablet {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+.resume {
+  margin-top: 20px;
+
+  text-align: center;
+  text-decoration: underline;
+
+  color: color(var(--color-iron) a(.6));
+}
+
+.resume:hover {
+  color: var(--color-iron);
+}
+
+.icon svg {
+  width: 48px;
+  height: 48px;
+  padding: 5px 20px;
+
+  fill: var(--color-iron);
+}
+
+.icon:hover svg,
+.icon:focus svg,
+.icon:active svg {
+  fill: color(var(--color-iron) a(.8));
+}

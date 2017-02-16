@@ -1,0 +1,39 @@
+@import "styles/variables.css";
+
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-weight: 300;
+  font-style: normal;
+
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+html,
+body {
+  font-family: "system";
+
+  height: 100%;
+  margin: 0;
+
+  color: var(--color-tuna);
+}
+
+:global(#container) {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+
+  color: var(--color-tuna);
+}
+
+a:hover {
+  color: color(var(--color-tuna) alpha(-40%));
+}

@@ -1,0 +1,14 @@
+:root {
+  --color-cape-cod: #494b4a;
+  --color-donkey-brown: #a39480;
+  --color-golden-dream: #ebc72b;
+  --color-heather: #acc0c9;
+  --color-iron: #d7d8db;
+  --color-sapling: #ddc89e;
+  --color-tan: #c8a67d;
+  --color-tuna: #36373a;
+  --color-white: #fdfdfd;
+
+  --app-max-width: 960px;
+  --navbar-height: 46px;
+}

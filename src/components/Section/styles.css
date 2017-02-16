@@ -1,0 +1,27 @@
+@import "styles/variables.css";
+
+.container {
+  display: flex;
+
+  padding: 10px 0;
+
+  flex: 1;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--color-tuna);
+
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  padding: 20px;
+
+  flex: 1;
+}

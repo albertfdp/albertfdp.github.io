@@ -1,0 +1,187 @@
+{
+  "basics": {
+    "name": "Albert Fernández",
+    "label": "Web Developer",
+    "picture": "",
+    "email": "albert@nandez.cat",
+    "phone": "(+45) 31 57 87 97",
+    "website": "https://nandez.cat",
+    "summary": "I am software engineer passionate about frontend web and mobile development. I have experience building web applications with ES6, React and Webpack. I am a very fast learner, and always eager to learn new things.\nI am a very curious person, which enjoys hacking and playing with new technologies, not afraid of breaking stuff.",
+    "location": {
+      "address": "Amagerbrogade 93, 2 tv",
+      "postalCode": "2300",
+      "city": "Copenhagen",
+      "countryCode": "Denmark",
+      "region": "Copenhagen"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "albertfdezp",
+        "url": "https://twitter.com/albertfdezp"
+      },
+      {
+        "network": "Github",
+        "username": "albertfdp",
+        "url": "https://github.com/albertfdp"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Zendesk",
+      "id": "zendesk",
+      "position": "Software Engineer",
+      "website": "https://zendesk.com",
+      "startDate": "2016-02-01",
+      "summary": "At Zendesk, I work at the Knowledge Bank app, which is part of the multi-branded Help Center product. The app is build using cutting edge web technologies.",
+      "highlights": [
+        "Built a library of accessible and themeable React components, which is shared and used by the rest of the organization.",
+        "Built on top of the legacy text editor for writing articles, while using modern technologies and keeping backwards compatibility. Ensured it by using snapshot regression tests.",
+        "Changed the architecture to use a different state management (Redux) which improved developer productivity and reduced code complexity and bugs.",
+        "Improved the performance of the application by introducing best practises in building immutable user interfaces."
+      ],
+      "tags": [
+        "react",
+        "redux",
+        "relay",
+        "graphql",
+        "postcss",
+        "css-modules",
+        "webpack",
+        "jest",
+        "unexpected.js"
+      ]
+    },
+    {
+      "company": "Podio, Citrix",
+      "id": "podio",
+      "position": "Frontend Developer",
+      "website": "https://podio.com",
+      "startDate": "2014-09-01",
+      "endDate": "2016-01-31",
+      "summary": "Podio is a workflow collaboration SaaS platform for organizations",
+      "highlights": [
+        "Building reusable and maintainable web components using React for the Podio web app. Test Driven Development with mocha and jsdom",
+        "Responsible for tech projects to keep the web app up-to-date with modern technologies, as React v0.14 or Webpack/SystemJS",
+        "Responsible for building a brand new Podio’s public facing website and for its maintenance. The website is a custom-made app built in Ruby on Rails with a component-based fully responsive mobile first approach."
+      ],
+      "tags": [
+        "react",
+        "webpack",
+        "systemjs",
+        "sass",
+        "ruby-on-rails",
+        "mocha"
+      ]
+    },
+    {
+      "company": "University of Copenhagen",
+      "id": "ku",
+      "position": "Student Programmer",
+      "website": "https://wallviz.dk",
+      "startDate": "2013-10-01",
+      "endDate": "2014-08-31",
+      "summary": "Programmer in WallViz research project. The objective of the WallViz research project is to use visualization on wall-sized, interactive displays for improving decision making from massive collections of data.",
+      "highlights": [
+        "Responsible for development of dynamic D3.js visualizations using touchable displays.",
+        "Responsible for the full stack (frontend, backend and operations)"
+      ],
+      "tags": [
+        "d3.js",
+        "python"
+      ]
+    },
+    {
+      "company": "Applus IDIADA",
+      "id": "idiada",
+      "position": "Intern Software Engineer",
+      "website": "https://applusidiada.com",
+      "startDate": "2013-06-01",
+      "endDate": "2013-08-31",
+      "summary": "Developer in a project for proving grounds management integrated with customer portal, using J2EE, Hibernate and Spring.",
+      "highlights": [
+        "Developed the web interface of a booking system, where customers could book race tracks"
+      ],
+      "tags": [
+        "j2ee",
+        "hibernate",
+        "spring",
+        "primefaces"
+      ]
+    },
+    {
+      "company": "LEAR Corporation",
+      "id": "lear",
+      "position": "Software Engineer",
+      "website": "https://lear.com",
+      "startDate": "2012-02-01",
+      "endDate": "2012-08-31",
+      "summary": "Build Management for BMW embedded software projects.",
+      "highlights": [
+        "Development and maintenance of automatic release tools using Ruby Rake, Atlassian Bamboo and custom Java applications",
+        "Management of SVN repository status, continuous build and unit tests"
+      ],
+      "tags": [
+        "ruby",
+        "svn"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Denmark",
+      "area": "Digital Media Engineering",
+      "studyType": "Master",
+      "startDate": "2012-09-01",
+      "endDate": "2014-08-31",
+      "courses": [
+        "Software Engineering",
+        "Mobile App Prototyping",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "UX/UI Engineering"
+      ]
+    },
+    {
+      "institution": "Universitat Rovira i Virgili",
+      "area": "Telecommunications, speciality in Telematics",
+      "studyType": "Bachelor",
+      "startDate": "2008-09-01",
+      "endDate": "2011-09-10",
+      "courses": [
+        "Computer Networks",
+        "Mobile & Web Application Development"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "Javascript (ES6 / JSX / node / npm)",
+        "CSS (SASS / postcss / raw)",
+        "Webpack 1 & 2",
+        "Redux, Immutable.js, GraphQL, Relay, React Native",
+        "Ruby on Rails",
+        "Mocha, Karma, unexpected.js",
+        "Python"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Full professional proficiency"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Catalan",
+      "fluency": "Native speaker"
+    }
+  ]
+}

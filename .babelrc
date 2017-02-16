@@ -1,7 +1,19 @@
 {
   "presets": [
-    "es2015",
+    [ "latest", {
+      "es2015": { "modules": false }
+    }],
     "react",
-    "stage-2"
+    "stage-0"
+  ],
+  "plugins": [
+    [ "module-resolver", {
+      "root": [ "./src" ],
+      "alias": {
+        "data": "./data",
+        "translations": "./locales/translations"
+      }
+    }],
+    "transform-export-extensions"
   ]
 }
