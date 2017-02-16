@@ -1,0 +1,43 @@
+@import "styles/variables.css";
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 20px;
+
+  flex: 1;
+  justify-content: center;
+}
+
+@tablet {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+.icon svg {
+  width: 4rem;
+  height: 4rem;
+  padding: .4em 1rem;
+
+  fill: var(--color-iron);
+}
+
+@desktop {
+  .icon svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.icon:hover svg,
+.icon:focus svg,
+.icon:active svg {
+  fill: color(var(--color-iron) a(.8));
+}

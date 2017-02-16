@@ -1,0 +1,35 @@
+@import "styles/variables.css";
+
+.button {
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  display: inline-block;
+
+  padding: 30px 60px;
+
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+
+  color: var(--color-tuna);
+  border: 1px solid var(--color-cape-cod);
+  border-radius: 3px;
+  background-color: var(--color-sapling);
+}
+
+.button:hover {
+  cursor: pointer;
+
+  color: var(--color-tuna);
+  background-color: color(var(--color-sapling) a(.9));
+}
+
+@desktop {
+  .button {
+    font-size: 1rem;
+
+    padding: 15px 30px;
+  }
+}

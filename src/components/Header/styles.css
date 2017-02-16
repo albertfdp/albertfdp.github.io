@@ -1,0 +1,132 @@
+@import "styles/variables.css";
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 180px;
+}
+
+.name {
+  font-size: 4rem;
+
+  margin-bottom: 5px;
+
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+
+  margin-top: 10px;
+
+  text-align: left;
+
+  opacity: .7;
+}
+
+@desktop {
+  .name {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 280px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100px;
+  padding: 3rem;
+
+  animation: bounceIn 1.5s;
+
+  align-self: center;
+}
+
+.text {
+  font-size: 2rem;
+
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.resume {
+  font-size: 2.2rem;
+
+  margin-top: 20px;
+
+  text-align: center;
+  text-decoration: underline;
+
+  color: color(var(--color-iron) a(.6));
+}
+
+.resume:hover {
+  cursor: pointer;
+
+  color: var(--color-iron);
+}
+
+@desktop {
+  .actions {
+    padding: 30px;
+  }
+
+  .resume,
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(.215, .610, .355, 1.000);
+  }
+
+  0% {
+    transform: scale3d(.3, .3, .3);
+
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    transform: scale3d(1.03, 1.03, 1.03);
+
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+
+    opacity: 1;
+  }
+}
