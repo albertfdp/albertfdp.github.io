@@ -14,26 +14,13 @@ if (typeof document !== 'undefined') {
 
 export default (locals, callback) => {
   const { renderToStaticMarkup } = require('react-dom/server')
+  const htmlTemplate = require('./index.pug')
 
   const assets = Object.keys(locals.webpackStats.compilation.assets)
-  const scripts = assets.filter(a => a.match(/\.js$/))
-  const stylesheets = assets.filter(a => a.match(/\.css$/))
 
-  callback(null,
-    `<!doctype html>
-     <html>
-      <head>
-        <meta charset="utf-8" />
-        <title>Albert Fern&aacute;ndez</title>
-        ${stylesheets.map(style => (`<link href="/dist/${style}" rel="stylesheet" />`))}
-      </head>
-      <body>
-        <div id="container">
-          ${renderToStaticMarkup(<App />)}
-        </div>
-        ${scripts.map(script => (`<script src="/dist/${script}"></script>`))}
-      </body>
-    </html>
-    `
-  )
+  callback(null, htmlTemplate({
+    scripts: assets.filter(a => a.match(/\.js$/)),
+    stylesheets: assets.filter(a => a.match(/\.css$/)),
+    content: renderToStaticMarkup(<App />)
+  }))
 }

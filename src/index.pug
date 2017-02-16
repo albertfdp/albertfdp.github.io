@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title= "Albert Fern&aacute;ndez"
+    meta(charset="utf-8")
+    each style in stylesheets
+      link(href="/dist/" + style + "", rel="stylesheet")
+  body
+    div#container!= content
+    each script in scripts
+      script(src="/dist/" + script)

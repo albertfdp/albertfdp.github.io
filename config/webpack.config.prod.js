@@ -35,6 +35,12 @@ module.exports = {
         include: paths.source
       },
       {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        include: paths.source,
+        query: { pretty: true }
+      },
+      {
         test: /\.svg$/,
         loaders: [
           'babel-loader',
