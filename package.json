@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js",
-    "deploy": "yarn build && gh-pages -d dist",
+    "deploy": "yarn build && yarn run gh-pages -- -d dist -m 'Build static page'",
     "lint": "standard"
   },
   "repository": "https://github.com/albertfdp/nandez.cat",
