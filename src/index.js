@@ -14,7 +14,7 @@ if (typeof document !== 'undefined') {
 
 export default (locals, callback) => {
   const { renderToStaticMarkup } = require('react-dom/server')
-  const htmlTemplate = require('./index.pug')
+  const htmlTemplate = require('./templates/index.pug')
 
   const assets = Object.keys(locals.webpackStats.compilation.assets)
 
