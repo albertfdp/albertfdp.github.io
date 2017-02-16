@@ -5,7 +5,7 @@ module.exports = {
   assets: path.join(__dirname, '..', 'src', 'assets'),
   components: path.join(__dirname, '..', 'src', 'components'),
   nodeModules: path.join(__dirname, '..', 'node_modules'),
-  output: path.join(__dirname, '..', 'public'),
+  output: path.join(__dirname, '..', 'dist'),
   public: '/',
   source: path.join(__dirname, '..', 'src'),
   styles: path.join(__dirname, '..', 'src', 'styles'),
