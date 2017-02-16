@@ -1,7 +1,3 @@
 export App from './App'
-export Footer from './Footer'
-export Header from './Header'
-export Home from './Home'
-export Navbar from './Navbar'
 export Text from './Text'
 export View from './View'

@@ -19,8 +19,8 @@ const App = ({ name, email, title }) => (
       </View>
       <View className={styles.actions}>
         <Text className={styles.text}>Available for freelance work.</Text>
-        <a href={`mailto:${email}`} className={styles.cta}>Work with me</a>
-        <a href='/resume' className={styles.resume}>Resumé</a>
+        <a id='work' href={`mailto:${email}`} className={styles.cta}>Work with me</a>
+        <a id='resume' href='/resume' className={styles.resume}>Resumé</a>
       </View>
     </View>
     <View className={styles.footer}>

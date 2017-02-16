@@ -115,6 +115,7 @@
 }
 
 .resume:hover {
+  cursor: pointer;
   color: var(--color-iron);
 }
 
