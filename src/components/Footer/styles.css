@@ -1,18 +1,15 @@
 @import "styles/variables.css";
 
 .footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 20px;
-
+  padding: 20px 40px;
+  justify-content: flex-end;
   align-items: center;
-  flex: 1;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .social {
@@ -27,9 +24,9 @@
 }
 
 .icon svg {
-  width: 4rem;
-  height: 4rem;
-  padding: .4em 1rem;
+  width: 90px;
+  height: 90px;
+  padding: 0 30px;
 
   fill: var(--color-iron);
 }

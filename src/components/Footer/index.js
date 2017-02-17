@@ -34,13 +34,6 @@ const Footer = () => (
         <GitHub />
       </a>
     </section>
-    <a
-      target='_blank'
-      className={styles.source}
-      href='https://github.com/albertfdp/albertfdp.github.io'
-    >
-      Source
-    </a>
   </footer>
 )
 

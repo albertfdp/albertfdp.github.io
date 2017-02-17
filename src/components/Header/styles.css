@@ -1,10 +1,24 @@
 @import "styles/variables.css";
 
+.content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 280px;
+
+  flex: 1;
+  justify-content: center;
+}
+
 .header {
   display: flex;
   flex-direction: column;
 
   min-height: 180px;
+  margin: 0 auto;
+
+  align-items: flex-start;
 }
 
 .name {
@@ -35,13 +49,6 @@
   }
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-
-  min-height: 280px;
-}
-
 .actions {
   display: flex;
   flex-direction: column;
@@ -55,7 +62,7 @@
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 36px;
 
   margin-bottom: 10px;
 
@@ -63,9 +70,10 @@
 }
 
 .resume {
-  font-size: 2.2rem;
+  font-size: 48px;
 
   margin-top: 20px;
+  padding: 10px 0;
 
   text-align: center;
   text-decoration: underline;
@@ -73,7 +81,9 @@
   color: color(var(--color-iron) a(.6));
 }
 
-.resume:hover {
+.resume:hover,
+.resume:active,
+.resume:focus {
   cursor: pointer;
 
   color: var(--color-iron);
