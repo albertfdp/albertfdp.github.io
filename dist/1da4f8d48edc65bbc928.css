@@ -285,14 +285,14 @@
 
   margin-bottom: 20px;
 
-  -webkit-box-flex: 1;
-
-      -ms-flex: 1;
-
-          flex: 1;
   -webkit-box-align: center;
+
       -ms-flex-align: center;
+
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 ._-src-components-Footer-styles--social--108p1 {
@@ -303,8 +303,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+
   -webkit-box-pack: center;
+
       -ms-flex-pack: center;
+
           justify-content: center;
 }
 
@@ -377,4 +380,4 @@ a:hover {
   color: #ebc72b;
 }
 
-/*# sourceMappingURL=d8baa3a6a7232e5a5721.css.map*/
+/*# sourceMappingURL=1da4f8d48edc65bbc928.css.map*/
