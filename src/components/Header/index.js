@@ -41,7 +41,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   name: 'Albert Fern\xE1ndez de la Pe\xF1a',
-  email: 'albert@nandez.cat',
+  email: 'albert+site@nandez.cat',
   title: 'Web Developer'
 }
 
