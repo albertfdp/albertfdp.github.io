@@ -8,7 +8,8 @@
     "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js && mv dist/index.html .",
     "deploy": "./bin/deploy.sh",
     "lint": "standard src/*",
-    "travis": "yarn standard"
+    "csslint": "csscomb -lv src/components/**/*.css",
+    "travis": "yarn standard && yarn csslint"
   },
   "repository": "https://github.com/albertfdp/nandez.cat",
   "author": "Albert Fernández <albert@nandez.cat>",
