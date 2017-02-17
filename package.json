@@ -9,7 +9,7 @@
     "deploy": "./bin/deploy.sh",
     "lint": "standard src/*",
     "csslint": "csscomb -lv src/components/**/*.css",
-    "travis": "yarn standard && yarn csslint"
+    "travis": "yarn lint && yarn csslint"
   },
   "repository": "https://github.com/albertfdp/nandez.cat",
   "author": "Albert Fernández <albert@nandez.cat>",
