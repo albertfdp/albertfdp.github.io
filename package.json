@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js",
-    "deploy": "yarn travis && yarn build",
+    "deploy": "yarn travis && yarn build && cp resume.html dist/resume.html",
     "lint": "standard src/*",
     "csslint": "csscomb -lv src/components/**/*.css",
     "travis": "yarn lint && yarn csslint"
