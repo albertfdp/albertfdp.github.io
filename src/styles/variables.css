@@ -9,6 +9,13 @@
   --color-tuna: #36373a;
   --color-white: #fdfdfd;
 
+  --font-size-xxl: 36px;
+  --font-size-xl: 24px;
+  --font-size-l: 22px;
+  --font-size-m: 16px;
+  --font-size-s: 12px;
+  --font-size-xs: 10px;
+
   --app-max-width: 960px;
   --navbar-height: 46px;
 }

@@ -1,7 +1,7 @@
 @import "styles/variables.css";
 
 .button {
-  font-size: 36px;
+  font-size: 1em;
   font-weight: 600;
 
   display: inline-block;
@@ -30,7 +30,7 @@
 
 @desktop {
   .button {
-    font-size: 1rem;
+    font-size: .6em;
 
     padding: 15px 30px;
   }

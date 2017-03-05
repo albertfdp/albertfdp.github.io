@@ -6,11 +6,24 @@ body {
   "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
   "Fira Sans", "Droid Sans", "Helvetica Neue",
   sans-serif;
+  font-size: var(--font-size-xl);
 
   height: 100%;
   margin: 0;
 
   background-color: var(--color-tuna);
+}
+
+@tablet {
+  html {
+    font-size: var(--font-size-l);
+  }
+}
+
+@desktop {
+  html {
+    font-size: var(--font-size-m);
+  }
 }
 
 :global(#container) {

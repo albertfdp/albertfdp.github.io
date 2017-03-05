@@ -19,19 +19,16 @@
   margin: 0 auto;
 
   align-items: flex-start;
+  justify-content: center;
 }
 
 .name {
-  font-size: 4rem;
-
   margin-bottom: 5px;
 
   text-align: left;
 }
 
 .title {
-  font-size: 3rem;
-
   margin-top: 10px;
 
   text-align: left;
@@ -39,22 +36,12 @@
   opacity: .7;
 }
 
-@desktop {
-  .name {
-    font-size: 3rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-}
-
 .actions {
   display: flex;
   flex-direction: column;
 
   min-height: 100px;
-  padding: 3rem;
+  margin: 5vh 0;
 
   animation: bounceIn 1.5s;
 
@@ -62,15 +49,22 @@
 }
 
 .text {
-  font-size: 36px;
+  font-size: 1.3em;
 
   margin-bottom: 10px;
 
   text-align: center;
 }
 
+@desktop {
+  .text,
+  .resume {
+    font-size: .6em;
+  }
+}
+
 .resume {
-  font-size: 48px;
+  font-size: 1.3em;
 
   margin-top: 20px;
   padding: 10px 0;
@@ -87,17 +81,6 @@
   cursor: pointer;
 
   color: var(--color-iron);
-}
-
-@desktop {
-  .actions {
-    padding: 30px;
-  }
-
-  .resume,
-  .text {
-    font-size: 1rem;
-  }
 }
 
 @keyframes bounceIn {
