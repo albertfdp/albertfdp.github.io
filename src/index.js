@@ -6,6 +6,8 @@ import { App } from 'components'
 import 'styles/global.css'
 
 if (typeof document !== 'undefined') {
+  __PRODUCTION__ && require('offline-plugin/runtime').install()
+
   render(
     <App />,
     document.getElementById('container')
