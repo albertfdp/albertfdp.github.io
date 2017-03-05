@@ -12,9 +12,6 @@ const CallToAction = ({ email }) => (
     >
       Work with me
     </Button>
-    <a id='resume' href='/resume' className={styles.resume}>
-      Resumé
-    </a>
   </View>
 )
 

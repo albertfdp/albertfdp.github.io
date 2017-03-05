@@ -1,0 +1,48 @@
+@import "styles/variables.css";
+
+.navbar {
+  font-size: var(--font-size-m);
+
+  display: flex;
+  flex-direction: row;
+
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.list {
+  padding: 0;
+
+  list-style: none;
+}
+
+@tablet {
+  .navbar {
+    align-self: flex-end;
+  }
+}
+
+.item {
+  margin: 0 15px;
+}
+
+.link {
+  font-size: 2em;
+  text-transform: capitalize;
+
+  color: color(var(--color-iron) a(.6));
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+  cursor: pointer;
+
+  color: var(--color-iron);
+}
+
+@desktop {
+  .link {
+    font-size: 1em;
+  }
+}

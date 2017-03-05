@@ -46,32 +46,6 @@
   align-self: center;
 }
 
-@desktop {
-  .resume {
-    font-size: .6em;
-  }
-}
-
-.resume {
-  font-size: 1.3em;
-
-  margin-top: 20px;
-  padding: 10px 0;
-
-  text-align: center;
-  text-decoration: underline;
-
-  color: color(var(--color-iron) a(.6));
-}
-
-.resume:hover,
-.resume:active,
-.resume:focus {
-  cursor: pointer;
-
-  color: var(--color-iron);
-}
-
 @keyframes bounceIn {
   from,
   20%,
