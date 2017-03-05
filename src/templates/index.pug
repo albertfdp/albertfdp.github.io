@@ -6,10 +6,10 @@ html(lang="en")
     meta(charset="utf-8")
     link(href="https://fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
     each style in stylesheets
-      link(href="/dist/" + style + "", rel="stylesheet")
+      link(href="/" + style, rel="stylesheet")
     include ./header.pug
   body
     div#container!= content
     each script in scripts
-      script(src="/dist/" + script)
+      script(src="/" + script)
     include ./footer.pug
