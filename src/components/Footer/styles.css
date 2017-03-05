@@ -5,11 +5,12 @@
   flex-direction: column;
 
   padding: 20px 40px;
-  justify-content: flex-end;
+
   align-items: center;
   flex-basis: auto;
   flex-grow: 0;
   flex-shrink: 0;
+  justify-content: flex-end;
 }
 
 .social {
