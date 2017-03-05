@@ -1,11 +1,10 @@
 import React, { PropTypes } from 'react'
-import { Button, Text, View } from 'components'
+import { Button, View } from 'components'
 
 import styles from './styles.css'
 
 const CallToAction = ({ email }) => (
   <View className={styles.actions}>
-    <Text className={styles.text}>Available for freelance work.</Text>
     <Button
       className={styles.cta}
       id='work'
