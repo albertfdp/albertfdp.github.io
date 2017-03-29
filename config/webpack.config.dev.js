@@ -20,12 +20,6 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'standard-loader',
-        include: paths.source
-      },
-      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: paths.source
