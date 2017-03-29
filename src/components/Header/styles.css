@@ -41,48 +41,5 @@
   min-height: 100px;
   margin: 5vh 0;
 
-  animation: bounceIn 1.5s;
-
   align-self: center;
-}
-
-@keyframes bounceIn {
-  from,
-  20%,
-  40%,
-  60%,
-  80%,
-  to {
-    animation-timing-function: cubic-bezier(.215, .610, .355, 1.000);
-  }
-
-  0% {
-    transform: scale3d(.3, .3, .3);
-
-    opacity: 0;
-  }
-
-  20% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  40% {
-    transform: scale3d(.9, .9, .9);
-  }
-
-  60% {
-    transform: scale3d(1.03, 1.03, 1.03);
-
-    opacity: 1;
-  }
-
-  80% {
-    transform: scale3d(.97, .97, .97);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-
-    opacity: 1;
-  }
 }
