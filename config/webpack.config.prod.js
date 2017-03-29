@@ -1,12 +1,12 @@
-const webpack = require('webpack')
-const postcssCssNext = require('postcss-cssnext')
-const postcssImport = require('postcss-import')
-const postcssVariableMedia = require('postcss-variable-media')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
-const OfflinePlugin = require('offline-plugin')
+const webpack = require('webpack');
+const postcssCssNext = require('postcss-cssnext');
+const postcssImport = require('postcss-import');
+const postcssVariableMedia = require('postcss-variable-media');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
 
-const paths = require('./paths')
+const paths = require('./paths');
 
 module.exports = {
   devtool: 'source-map',
@@ -43,10 +43,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loaders: [
-          'babel-loader',
-          'react-svg-loader'
-        ],
+        loaders: ['babel-loader', 'react-svg-loader'],
         include: paths.assets
       },
       {
@@ -66,18 +63,18 @@ module.exports = {
 
   plugins: [
     new webpack.DefinePlugin({
-      '__DEV__': false,
-      '__PRODUCTION__': true,
+      __DEV__: false,
+      __PRODUCTION__: true,
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
     new webpack.LoaderOptionsPlugin({
       test: /\.css$/,
       options: {
         context: __dirname,
-        postcss: function (webpack) {
+        postcss: function(webpack) {
           return [
             postcssImport({
-              path: [ paths.source, paths.nodeModules ]
+              path: [paths.source, paths.nodeModules]
             }),
             postcssVariableMedia({
               breakpoints: {
@@ -87,7 +84,7 @@ module.exports = {
               consolidate: true
             }),
             postcssCssNext()
-          ]
+          ];
         }
       }
     }),
@@ -100,7 +97,7 @@ module.exports = {
       compressor: { screw_ie8: true, warnings: false },
       mangle: { screw_ie8: true }
     }),
-    new StaticSiteGeneratorPlugin('app', [ '/' ], {}, { window: {} }),
+    new StaticSiteGeneratorPlugin('app', ['/'], {}, { window: {} }),
     new OfflinePlugin()
   ]
-}
+};

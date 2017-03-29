@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { PropTypes } from 'react';
 
 const View = ({ children, ...props }) => (
   <div {...props}>
     {children}
   </div>
-)
+);
 
-export default View
+View.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default View;

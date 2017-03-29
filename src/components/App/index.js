@@ -1,7 +1,7 @@
-import React from 'react'
-import { Footer, Navbar, Header, View } from 'components'
+import React from 'react';
+import { Footer, Navbar, Header, View } from 'components';
 
-import styles from './styles.css'
+import styles from './styles.css';
 
 const App = () => (
   <View className={styles.container}>
@@ -9,6 +9,6 @@ const App = () => (
     <Header />
     <Footer />
   </View>
-)
+);
 
-export default App
+export default App;

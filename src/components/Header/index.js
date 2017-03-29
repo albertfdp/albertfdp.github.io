@@ -1,19 +1,19 @@
-import React, { PropTypes } from 'react'
-import { Button, View } from 'components'
+import React, { PropTypes } from 'react';
+import { Button, View } from 'components';
 
-import styles from './styles.css'
+import styles from './styles.css';
 
 const CallToAction = ({ email }) => (
   <View className={styles.actions}>
-    <Button
-      className={styles.cta}
-      id='work'
-      to={`mailto:${email}`}
-    >
+    <Button className={styles.cta} id="work" to={`mailto:${email}`}>
       Work with me
     </Button>
   </View>
-)
+);
+
+CallToAction.propTypes = {
+  email: PropTypes.string.isRequired
+};
 
 const Header = ({ name, email, title }) => (
   <View className={styles.content}>
@@ -27,18 +27,18 @@ const Header = ({ name, email, title }) => (
     </View>
     <CallToAction email={email} />
   </View>
-)
+);
 
 Header.propTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
-}
+};
 
 Header.defaultProps = {
   name: 'Albert Fern\xE1ndez de la Pe\xF1a',
   email: 'albert+site@nandez.cat',
   title: 'Web Developer'
-}
+};
 
-export default Header
+export default Header;

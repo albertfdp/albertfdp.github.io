@@ -1,15 +1,15 @@
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const postcssCssNext = require('postcss-cssnext')
-const postcssImport = require('postcss-import')
-const postcssVariableMedia = require('postcss-variable-media')
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const postcssCssNext = require('postcss-cssnext');
+const postcssImport = require('postcss-import');
+const postcssVariableMedia = require('postcss-variable-media');
 
-const paths = require('./paths')
+const paths = require('./paths');
 
 module.exports = {
   devtool: 'cheap-module-source-map',
 
-  entry: [ paths.app ],
+  entry: [paths.app],
 
   output: {
     filename: '[name].js',
@@ -38,10 +38,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loaders: [
-          'babel-loader',
-          'react-svg-loader'
-        ],
+        loaders: ['babel-loader', 'react-svg-loader'],
         include: paths.assets
       },
       {
@@ -66,17 +63,17 @@ module.exports = {
 
   plugins: [
     new webpack.DefinePlugin({
-      '__DEV__': true,
-      '__PRODUCTION__': false
+      __DEV__: true,
+      __PRODUCTION__: false
     }),
     new webpack.LoaderOptionsPlugin({
       test: /\.css$/,
       options: {
         context: __dirname,
-        postcss: function (webpack) {
+        postcss: function(webpack) {
           return [
             postcssImport({
-              path: [ paths.source, paths.nodeModules ]
+              path: [paths.source, paths.nodeModules]
             }),
             postcssVariableMedia({
               breakpoints: {
@@ -86,7 +83,7 @@ module.exports = {
               consolidate: true
             }),
             postcssCssNext()
-          ]
+          ];
         }
       }
     }),
@@ -96,4 +93,4 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
-}
+};

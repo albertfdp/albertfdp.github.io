@@ -1,28 +1,28 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 
-import { App } from 'components'
+import { App } from 'components';
 
-import 'styles/global.css'
+import 'styles/global.css';
 
 if (typeof document !== 'undefined') {
-  __PRODUCTION__ && require('offline-plugin/runtime').install()
+  __PRODUCTION__ && require('offline-plugin/runtime').install();
 
-  render(
-    <App />,
-    document.getElementById('container')
-  )
+  render(<App />, document.getElementById('container'));
 }
 
 export default (locals, callback) => {
-  const { renderToStaticMarkup } = require('react-dom/server')
-  const htmlTemplate = require('./templates/index.pug')
+  const { renderToStaticMarkup } = require('react-dom/server');
+  const htmlTemplate = require('./templates/index.pug');
 
-  const assets = Object.keys(locals.webpackStats.compilation.assets)
+  const assets = Object.keys(locals.webpackStats.compilation.assets);
 
-  callback(null, htmlTemplate({
-    scripts: assets.filter(a => a.match(/\.js$/)),
-    stylesheets: assets.filter(a => a.match(/\.css$/)),
-    content: renderToStaticMarkup(<App />)
-  }))
-}
+  callback(
+    null,
+    htmlTemplate({
+      scripts: assets.filter(a => a.match(/\.js$/)),
+      stylesheets: assets.filter(a => a.match(/\.css$/)),
+      content: renderToStaticMarkup(<App />)
+    })
+  );
+};
