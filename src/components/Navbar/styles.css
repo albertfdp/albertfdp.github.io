@@ -28,6 +28,7 @@
 
 .link {
   font-size: 2em;
+
   text-transform: capitalize;
 
   color: color(var(--color-iron) a(.6));
